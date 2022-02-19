@@ -1,7 +1,7 @@
 import NiMan_Helper as helper
 
 global Token
-Token = 'ODI0MzM3MjU4MjQwOTMzOTI5.YFt55Q.8ReNKiJsR2gWt-qPv-QdC-br8HM'
+Token = 'OUTDATED_ODI0MzM3MjU4MjQwOTMzOTI5.YFt55Q.8ReNKiJsR2gWt-qPv-QdC-br8HM'
 
 global symbol
 symbol = '='
