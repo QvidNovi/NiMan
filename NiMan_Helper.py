@@ -97,37 +97,7 @@ async def process_message(message, bot):
     if bot.user in message.mentions and 'purge' not in message.content:
         await message.channel.send('Why you @ me bitch? No use in that... use a command lazy ass. If you really need help and are still reading this, I guess I\'ll tell you to use ' + constants.symbol + 'help. Now go make use of your life you dumbass piece of shit and get some help for your stupidity. :stuck_out_tongue:')
         return
-
-    if 'cock' in message.content.lower():
-        print('{0.author} said \'{0.content}\''.format(message))
-        print('said nice cock!')
-        gif = get_gif('nice', 20)
-        await message.channel.send(gif[random.randint(0,19)])
-        gif = get_gif('cock', 20)
-        await message.channel.send(gif[random.randint(0,19)])
-        await message.channel.send('NICE COCK!')
-        return(False)
-
-    if 'cock' not in message.content.lower() and ('nice' in message.content.lower()) or ('noice' in message.content.lower()):
-        print('{0.author} said \'{0.content}\''.format(message))
-        print('said noice!')
-        gif = get_gif('nice', 20)
-        await message.channel.send(gif[random.randint(0,19)])
-        return(False)
-
-    if 'ni' in message.content.lower():
-        print('{0.author} said \'{0.content}\''.format(message))
-        print('said ni!'.format(message))
-        await message.channel.send('ni')
-        return(False)
-
-    if constants.symbol + 'n' in message.content.lower() or '!n' in message.content.lower():
-        print('{0.author} said \'{0.content}\''.format(message))
-        print('replaced ' + constants.symbol + 'n')
-        await message.delete()
-        await message.channel.send(message.content.replace(constants.symbol + 'n', 'nigga').replace('!n', 'nigga').replace(constants.symbol + 'N', "nigger").replace('!N', 'nigger'))
-        return(False)
-
+    
     return(False)
 
 # Web APIs
